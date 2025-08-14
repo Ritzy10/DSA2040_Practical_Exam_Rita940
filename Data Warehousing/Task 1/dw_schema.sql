@@ -45,3 +45,4 @@ CREATE TABLE SalesFact (
   FOREIGN KEY(customer_id) REFERENCES Customer(customer_id),
   FOREIGN KEY(time_id) REFERENCES Time(time_id)
 );
+

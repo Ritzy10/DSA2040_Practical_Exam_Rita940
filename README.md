@@ -11,50 +11,43 @@ The project is divided into two main sections:
 
 
 ## Project Structure
-
 DSA2040_PRACTICAL_EXAM/
-│
-├──  Data Warehousing/
-│   ├──  Task 1/  # Data warehouse design
-│   │   ├──  dw_schema.sql
-│   │   ├──  Explanation.md
-│   │   └──  star_schema.png
-│
-│   ├──  Task 2/  # ETL process
-│   │   ├──  dw_schema.sql
-│   │   ├──  etl_retail.ipynb
-│   │   ├──  OnlineRetail.xlsx
-│   │   └──  retail_dw.db
-│
-│   └──  Task 3/  # OLAP queries & visualization
-│       ├──  bottom 10 countries by sales.png
-│       ├──  olap_analysis.pdf
-│       ├──  olap_queries.sql
-│       ├──  top 10 countries by sales.png
-│       ├──  total sales by country.png
-│       └──  visualizations.ipynb
-│
-├──  Data Mining/
-│   ├──  Task 1/  # Data preprocessing and exploration (Iris dataset)
-│   │   ├──  boxplots_iris.png
-│   │   ├──  correlation_heatmap_iris.png
-│   │   ├──  pairplot_iris.png
-│   │   └──  preprocessing_iris.ipynb
-│
-│   ├──  Task 2/  # Clustering
-│   │   ├──  clustering_analysis.pdf
-│   │   ├──  clustering_iris.ipynb
-│   │   ├──  clusters_scatter.png
-│   │   └──  elbow_curve.png
-│
-│   └──  Task 3/  # Classification & Association Rule Mining
-│       ├──  Classification & Association Rule Mining.pdf
-│       ├──  decision_tree.png
-│       ├──  mining_iris_basket.ipynb
-│       └──  synthetic_transactions.csv
-│
-├──  OnlineRetail.xlsx
-└──  README.md
+├── Data Warehousing/ 
+│   ├── Task 1/                      # Data warehouse design
+│   │   ├── dw_schema.sql
+│   │   ├── Explanation.md
+│   │   └── star_schema.png
+│   ├── Task 2/                      # ETL process
+│   │   ├── dw_schema.sql
+│   │   ├── etl_retail.ipynb
+│   │   ├── OnlineRetail.xlsx
+│   │   └── retail_dw.db
+│   └── Task 3/                      # OLAP queries & visualization
+│       ├── bottom 10 countries by sales.png
+│       ├── olap_analysis.pdf
+│       ├── olap_queries.sql
+│       ├── top 10 countries by sales.png
+│       ├── total sales by country.png
+│       └── visualizations.ipynb
+├── Data Mining/ 
+│   ├── Task 1/                      # Data preprocessing and exploration (Iris dataset)
+│   │   ├── boxplots_iris.png
+│   │   ├── correlation_heatmap_iris.png
+│   │   ├── pairplot_iris.png
+│   │   └── preprocessing_iris.ipynb
+│   ├── Task 2/                      # Clustering
+│   │   ├── clustering_analysis.pdf
+│   │   ├── clustering_iris.ipynb
+│   │   ├── clusters_scatter.png
+│   │   └── elbow_curve.png
+│   └── Task 3/                      # Classification & Association Rule Mining
+│       ├── Classification & Association Rule Mining.pdf
+│       ├── decision_tree.png
+│       ├── mining_iris_basket.ipynb
+│       └── synthetic_transactions.csv
+├── OnlineRetail.xlsx
+└── README.md
+
 
 ## Requirements  
 
@@ -69,16 +62,17 @@ DSA2040_PRACTICAL_EXAM/
   - sqlite3 (built-in)
 
 
-
 ## Section 1: Data Warehousing  
 
 ### Task 1: Data Warehouse Design  
 - **Star Schema:**  
-  - Fact Table: SalesFact (SalesAmount, Quantity, foreign keys).  
-  - Dimensions: CustomerDim, ProductDim, TimeDim, CountryDim.  
+  - Fact Table: SalesFact.  
+  - Dimensions: Customer, Product, Time.  
+- Star schema chosen for simplicity and fast query performance.
 - Diagram: **star_schema.png**.  
+<img src="screenshots/star_schema.png" width="800">
 - SQL: **dw_schema.sql**.  
-- Rationale: Star schema chosen for simplicity and fast query performance.
+<img src="screenshots/dw_schema.png" width="800">
 
 
 ### Task 2: ETL Process  
@@ -91,20 +85,28 @@ DSA2040_PRACTICAL_EXAM/
      - Created summaries and dimension tables.
   3. Loaded into SQLite database (**retail_dw.db**) with:
      - SalesFact
-     - CustomerDim
-     - TimeDim
+     - Customer
+     - Time
+     - Product
 - ETL implemented in **etl_retail.ipynb**.
+<img src="screenshots/etl1.png" width="800">
+<img src="screenshots/etl2.png" width="800">
+<img src="screenshots/etl3.png" width="800">
 
 
 ### Task 3: OLAP Queries & Visualization  
 - Queries in **olap_queries.sql**:
+<img src="screenshots/olap.png" width="800">
   - Roll-up: Sales by country & quarter.
   - Drill-down: Monthly sales for a selected country.
   - Slice: Sales for electronics category.
 - Visualizations:
   - Top 10 countries by sales.
+<img src="screenshots/top 10 countries by sales.png" width="800">
   - Bottom 10 countries by sales.
+<img src="screenshots/bottom 10 countries by sales.png" width="800">  
   - Total sales by country.
+<img src="screenshots/total sales by country.png" width="800">
 - Analysis in **olap_analysis.pdf**.
 
 
@@ -119,8 +121,11 @@ DSA2040_PRACTICAL_EXAM/
   - Encoded class labels for modeling.
   - Generated:
     - Boxplots for outlier detection.
+<img src="screenshots/boxplots_iris.png" width="800">
     - Correlation heatmap.
+<img src="screenshots/correlation_heatmap_iris.png" width="800">    
     - Pairplot for feature relationships.
+<img src="screenshots/pairplot_iris.png" width="800">
   - Split into 80% training and 20% testing sets.
 
 
@@ -129,18 +134,22 @@ DSA2040_PRACTICAL_EXAM/
 - Metrics: Adjusted Rand Index (ARI).  
 - Outputs:
   - Elbow curve for k selection.
+<img src="screenshots/elbow_curve.png" width="800">
   - Scatter plot of clusters.
+<img src="screenshots/clusters_scatter.png" width="800">
 - Analysis included in **clustering_analysis.pdf**.
 
 
 ### Task 3: Classification & Association Rule Mining  
-
 **Classification**  
-- Models: Decision Tree (visualized) and K-Nearest Neighbors (K=5).  
+<img src="screenshots/classification.png" width="800">
+- Models: Decision Tree (visualized) and K-Nearest Neighbors (K=5). 
+<img src="screenshots/decision_tree.png" width="800"> 
 - Evaluated using accuracy, precision, recall, and F1-score.  
 - Compared performance between models.  
 
 **Association Rule Mining**  
+<img src="screenshots/association.png" width="800">
 - Generated synthetic transactions (~30 baskets, 20 possible items).  
 - Applied Apriori algorithm (min_support=0.2, min_confidence=0.5).  
 - Extracted top 5 rules by lift.  
