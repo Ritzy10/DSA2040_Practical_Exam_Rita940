@@ -55,7 +55,7 @@ DSA2040_PRACTICAL_EXAM/
 
 ## Requirements  
 
-- **Python 3.13.4
+- **Python 3.13.4**
 - Libraries:
   - pandas
   - numpy
@@ -175,5 +175,5 @@ DSA2040_PRACTICAL_EXAM/
 
 ## Conclusion
 
-This project delivers an end to end data analytics solution covering data warehousing, ETL, OLAP and data mining techniques like clustering, classification and association rule mining. It demonstrates the ability to design data pipelines, perform advanced analysis and create visual insights that support decision-making.
+This project delivers an end to end data analytics solution covering data warehousing, ETL, OLAP and data mining techniques like clustering, classification and association rule mining. It demonstrates the ability to design data pipelines, perform advanced analysis and create visual insights that support decision making.
 
