@@ -1,13 +1,13 @@
-# DSA 2040 – Practical Exam  
+# DSA 2040 – End Semester Exam  
 **Data Warehousing and Data Mining**  
 **RITA** 
 
 ## Overview  
-This repository contains my complete submission for the **DSA 2040 US 2025 End Semester Practical Exam** covering **Data Warehousing** and **Data Mining**. The work adheres to the official brief, including star-schema design, ETL to SQLite, OLAP analysis and visualization, as well as preprocessing, clustering, classification, and association rule mining.
+This repository contains my complete submission for the **DSA 2040 US 2025 End Semester Practical Exam** covering **Data Warehousing** and **Data Mining**. The work includes star-schema design, ETL to SQLite, OLAP analysis and visualization, as well as preprocessing, clustering, classification and association rule mining.
 
 The project is divided into two main sections:  
-1. **Data Mining** – Preprocessing, clustering, classification, and association rule mining.  
-2. **Data Warehousing** – Data warehouse design, ETL implementation, OLAP queries, and analysis.
+1. **Data Mining** – Preprocessing, clustering, classification and association rule mining.  
+2. **Data Warehousing** – Data warehouse design, ETL implementation, OLAP queries and analysis.
 
 
 ## Project Structure
@@ -75,6 +75,7 @@ DSA2040_PRACTICAL_EXAM/
 - Star schema chosen for simplicity and fast query performance.
 - Diagram: **star_schema.png**.  
 <img src="screenshots/star_schema.png" width="800">
+
 - SQL: **dw_schema.sql**.  
 <img src="screenshots/dw_schema.png" width="800">
 
@@ -171,4 +172,8 @@ DSA2040_PRACTICAL_EXAM/
 - Applied Apriori algorithm (min_support=0.2, min_confidence=0.5).  
 - Extracted top 5 rules by lift.  
 - Business implications discussed in the PDF report.
+
+## Conclusion
+
+This project delivers an end-to-end data analytics solution covering data warehousing, ETL, OLAP and data mining techniques like clustering, classification and association rule mining. It demonstrates the ability to design robust data pipelines, perform advanced analysis and create visual insights that support decision-making.
 
