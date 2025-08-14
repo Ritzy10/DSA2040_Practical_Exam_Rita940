@@ -11,6 +11,9 @@ The project is divided into two main sections:
 
 
 ## Project Structure
+
+```
+
 DSA2040_PRACTICAL_EXAM/
 ├── Data Warehousing/ 
 │   ├── Task 1/                      # Data warehouse design
@@ -48,6 +51,7 @@ DSA2040_PRACTICAL_EXAM/
 ├── OnlineRetail.xlsx
 └── README.md
 
+```
 
 ## Requirements  
 
@@ -97,16 +101,21 @@ DSA2040_PRACTICAL_EXAM/
 ### Task 3: OLAP Queries & Visualization  
 - Queries in **olap_queries.sql**:
 <img src="screenshots/olap.png" width="800">
-  - Roll-up: Sales by country & quarter.
-  - Drill-down: Monthly sales for a selected country.
-  - Slice: Sales for electronics category.
+ 
+ - Roll-up: Sales by country & quarter.
+ - Drill-down: Monthly sales for a selected country.
+ - Slice: Sales for electronics category.
+
 - Visualizations:
   - Top 10 countries by sales.
 <img src="screenshots/top 10 countries by sales.png" width="800">
+
   - Bottom 10 countries by sales.
 <img src="screenshots/bottom 10 countries by sales.png" width="800">  
+
   - Total sales by country.
 <img src="screenshots/total sales by country.png" width="800">
+
 - Analysis in **olap_analysis.pdf**.
 
 
@@ -122,10 +131,13 @@ DSA2040_PRACTICAL_EXAM/
   - Generated:
     - Boxplots for outlier detection.
 <img src="screenshots/boxplots_iris.png" width="800">
-    - Correlation heatmap.
-<img src="screenshots/correlation_heatmap_iris.png" width="800">    
-    - Pairplot for feature relationships.
+
+  - Correlation heatmap.
+<img src="screenshots/correlation_heatmap_iris.png" width="800"> 
+
+  - Pairplot for feature relationships.
 <img src="screenshots/pairplot_iris.png" width="800">
+
   - Split into 80% training and 20% testing sets.
 
 
@@ -135,21 +147,26 @@ DSA2040_PRACTICAL_EXAM/
 - Outputs:
   - Elbow curve for k selection.
 <img src="screenshots/elbow_curve.png" width="800">
+
   - Scatter plot of clusters.
 <img src="screenshots/clusters_scatter.png" width="800">
+
 - Analysis included in **clustering_analysis.pdf**.
 
 
 ### Task 3: Classification & Association Rule Mining  
 **Classification**  
 <img src="screenshots/classification.png" width="800">
+
 - Models: Decision Tree (visualized) and K-Nearest Neighbors (K=5). 
 <img src="screenshots/decision_tree.png" width="800"> 
+
 - Evaluated using accuracy, precision, recall, and F1-score.  
 - Compared performance between models.  
 
 **Association Rule Mining**  
 <img src="screenshots/association.png" width="800">
+
 - Generated synthetic transactions (~30 baskets, 20 possible items).  
 - Applied Apriori algorithm (min_support=0.2, min_confidence=0.5).  
 - Extracted top 5 rules by lift.  
