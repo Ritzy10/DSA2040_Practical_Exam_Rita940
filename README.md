@@ -10,50 +10,51 @@ The project is divided into two main sections:
 2. **Data Warehousing** – Data warehouse design, ETL implementation, OLAP queries, and analysis.
 
 
-## Project Structure  
+## Project Structure
+
 DSA2040_PRACTICAL_EXAM/
 │
-├── 📁 Data Warehousing/
-│ ├── 📁 Task 1/ # Data warehouse design
-│ │ ├── 📄 dw_schema.sql
-│ │ ├── 📄 Explanation.md
-│ │ └── 📄 star_schema.png
-│ │
-│ ├── 📁 Task 2/ # ETL process
-│ │ ├── 📄 dw_schema.sql
-│ │ ├── 📄 etl_retail.ipynb
-│ │ ├── 📄 OnlineRetail.xlsx
-│ │ └── 📄 retail_dw.db
-│ │
-│ └── 📁 Task 3/ # OLAP queries & visualization
-│ ├── 📄 bottom 10 countries by sales.png
-│ ├── 📄 olap_analysis.pdf
-│ ├── 📄 olap_queries.sql
-│ ├── 📄 top 10 countries by sales.png
-│ ├── 📄 total sales by country.png
-│ └── 📄 visualizations.ipynb
+├──  Data Warehousing/
+│   ├──  Task 1/  # Data warehouse design
+│   │   ├──  dw_schema.sql
+│   │   ├──  Explanation.md
+│   │   └──  star_schema.png
 │
-├── 📁 Data Mining/
-│ ├── 📁 Task 1/ # Data preprocessing and exploration (Iris dataset)
-│ │ ├── 📄 boxplots_iris.png
-│ │ ├── 📄 correlation_heatmap_iris.png
-│ │ ├── 📄 pairplot_iris.png
-│ │ └── 📄 preprocessing_iris.ipynb
-│ │
-│ ├── 📁 Task 2/ # Clustering
-│ │ ├── 📄 clustering_analysis.pdf
-│ │ ├── 📄 clustering_iris.ipynb
-│ │ ├── 📄 clusters_scatter.png
-│ │ └── 📄 elbow_curve.png
-│ │
-│ └── 📁 Task 3/ # Classification & Association Rule Mining
-│ ├── 📄 Classification & Association Rule Mining.pdf
-│ ├── 📄 decision_tree.png
-│ ├── 📄 mining_iris_basket.ipynb
-│ └── 📄 synthetic_transactions.csv
+│   ├──  Task 2/  # ETL process
+│   │   ├──  dw_schema.sql
+│   │   ├──  etl_retail.ipynb
+│   │   ├──  OnlineRetail.xlsx
+│   │   └──  retail_dw.db
 │
-├── 📄 OnlineRetail.xlsx
-└── 📄 README.md
+│   └──  Task 3/  # OLAP queries & visualization
+│       ├──  bottom 10 countries by sales.png
+│       ├──  olap_analysis.pdf
+│       ├──  olap_queries.sql
+│       ├──  top 10 countries by sales.png
+│       ├──  total sales by country.png
+│       └──  visualizations.ipynb
+│
+├──  Data Mining/
+│   ├──  Task 1/  # Data preprocessing and exploration (Iris dataset)
+│   │   ├──  boxplots_iris.png
+│   │   ├──  correlation_heatmap_iris.png
+│   │   ├──  pairplot_iris.png
+│   │   └──  preprocessing_iris.ipynb
+│
+│   ├──  Task 2/  # Clustering
+│   │   ├──  clustering_analysis.pdf
+│   │   ├──  clustering_iris.ipynb
+│   │   ├──  clusters_scatter.png
+│   │   └──  elbow_curve.png
+│
+│   └──  Task 3/  # Classification & Association Rule Mining
+│       ├──  Classification & Association Rule Mining.pdf
+│       ├──  decision_tree.png
+│       ├──  mining_iris_basket.ipynb
+│       └──  synthetic_transactions.csv
+│
+├──  OnlineRetail.xlsx
+└──  README.md
 
 ## Requirements  
 
